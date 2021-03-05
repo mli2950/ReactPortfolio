@@ -127,18 +127,20 @@ margin-right: -125px;
 font-family:monospace;
 padding-top: 10px;
 font-size: 17px;
-margin-left: -30px;
 font-weight: bold;
 color: white;
+text-align: center;
+margin-left: -35%;
 }
 
 #phone {
 font-family:monospace;
 padding-top: 10px;
 font-size: 17px;
-margin-right: 20px;
 font-weight: bold;
 color: white;
+text-align: center;
+margin-right: -70%;
 }
 
 .card-columns {
