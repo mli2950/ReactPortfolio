@@ -1,38 +1,186 @@
-.App {
+html {
+  height:100%;
+}
+
+
+.bg {
+  animation:slide 30s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #4f4f51 50%, #f58f7c 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:30s;
+}
+
+.bg3 {
+  animation-duration:30s;
+}
+
+.contactContent {
+  position: fixed;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  left: 50%;
+  top: 50%;
+  padding: 4vmin;
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  transform:translate(-50%, -50%);
+  width: 40%;
+  height: 75%;
+  margin-top: -15px;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:4vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+  margin-top: -20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h3 {
+  font-family:monospace;
+  margin-top: 15px;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform:translateX(25%);
   }
+}
+
+/* Styling, Z-index, and positioning for my footer */
+.footer-icon {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.footer-icon-wrapper {
+margin-left: auto !important;
+margin-right: auto !important;
+width: 30%;
+margin-bottom: 1%;
+}
+
+.projectsContent {
+
+  border-radius:.25em;
+  
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+.carousel-caption {
+position: relative;
+left: auto;
+right: auto;
+}
+
+.carousel {
+padding-top: 20px;
+padding-bottom: 100px;
+}
+
+#myCarousel {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.carousel-control-prev {
+margin-left: -125px;
+}
+
+.carousel-control-next {
+margin-right: -125px;
+}
+
+#email {
+font-family:monospace;
+padding-top: 10px;
+font-size: 17px;
+margin-left: -30px;
+font-weight: bold;
+color: white;
+}
+
+#phone {
+font-family:monospace;
+padding-top: 10px;
+font-size: 17px;
+margin-right: 20px;
+font-weight: bold;
+color: white;
+}
+
+.card-columns {
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+
+}
+
+.card {
+background-color: #F8F9FA;
+}
+
+.btn {
+margin-left: 50px;
+}
+
+#message {
+height: 100px;
+}
+
+.form-group {
+margin-top: 50px;
+width: 100%;
+font-size: 18px;
+font-family:monospace;
+align-items: right;
+justify-content: right;
+display: flex;
+}
+
+#emailContact {
+
+}
+
+input, textarea {
+width: 300px;
+margin-left: auto;
+font-family:monospace;
+}
+
+label {
+margin-right: 20px;;
 }
