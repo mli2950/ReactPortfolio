@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Navbar from "./reusable/navbar";
 import Footer from "./reusable/footer";
-import AsherAndI from "../assets/images/rsz_1asherandicircle.png";
+import AsherAndI from "../assets/images/rsz_1asherandicircle.png"
 
 class About extends Component {
-  state = {};
+    state = {};
 
-  render() {
-    return (
-      <div>
+    render() {
+        return (
+            <div>
         <div>
           <Navbar />
         </div>
@@ -18,7 +18,7 @@ class About extends Component {
         <div className="bg bg3" />
         <div className="outerContent">
           <div className="content">
-            <img src={AsherAndI} />
+            <img src={AsherAndI} class="aboutImage"/>
             <h3>My name is Michael Li, I am a Wyoming native. I am currently enrolled in the University of Denver's Full-Stack Web Development course. Once finished, I hope to take my passion for web developing to a full-time position!</h3>
           </div>
             </div>
@@ -27,8 +27,8 @@ class About extends Component {
             </div>
 
       </div>
-    );
-  }
+        )
+    }
 }
 
 export default About;

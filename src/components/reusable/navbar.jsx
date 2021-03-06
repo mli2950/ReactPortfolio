@@ -12,7 +12,7 @@ class Navbar extends Component {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
             <a className="nav-item nav-link active" href="./index.html">Home <span className="sr-only">(current)</span></a>
-            <a className="nav-item nav-link" href="./projects.html">Projects</a>
+            <a className="nav-item nav-link" href="./projects">Projects</a>
             <a className="nav-item nav-link" href="./contact.html">Contact</a>
             <a className="nav-item nav-link" href="./resume.html">Resume</a>
           </div>

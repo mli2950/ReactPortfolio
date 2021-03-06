@@ -1,16 +1,13 @@
 import React, { Component } from "react";
-import Navbar from "./reusable/navbar";
-import Footer from "./reusable/footer";
+import Navbar from "./components/reusable/navbar";
+import Footer from "./components/reusable/footer";
+import "./App.css"
 
 class Projects extends Component {
     state = {};
 
     render() {
         return (
-          <div>
-          <div className="bg" />
-        <div className="bg bg2" />
-        <div className="bg bg3" />
             <div className="card-columns">
         <div className="card">
           <img className="card-img-top" src="./Assets/images/random-tech-quote-generator.png" alt="Random Tech Quote Generator" />
@@ -73,7 +70,6 @@ class Projects extends Component {
             <a className="btn btn-large pull-right" id style={{backgroundColor: '#656567', color: 'white'}} href="https://drive.google.com/file/d/1fTLDwRokQiOXDNx1oOI3icQG_3A78Qai/view" target="_blank">Demonstration</a>
           </div>
         </div>
-      </div>
       </div>
         )
     }

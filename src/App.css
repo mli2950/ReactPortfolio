@@ -186,3 +186,7 @@ font-family:monospace;
 label {
 margin-right: 20px;;
 }
+
+.aboutImage {
+  margin-bottom: 15px;
+}
