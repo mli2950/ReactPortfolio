@@ -19,7 +19,7 @@ class About extends Component {
           <div className="navbar-nav">
             <a className="nav-item nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
             <a className="nav-item nav-link " href="./projects">Projects</a>
-            <a className="nav-item nav-link" href="./contact.html">Contact</a>
+            <a className="nav-item nav-link" href="./contact">Contact</a>
             <a className="nav-item nav-link" href="./resume.html">Resume</a>
           </div>
         </div>
