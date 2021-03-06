@@ -99,29 +99,7 @@ margin-bottom: 1%;
   transform:translate(-50%, -50%);
 }
 
-.carousel-caption {
-position: relative;
-left: auto;
-right: auto;
-}
 
-.carousel {
-padding-top: 20px;
-padding-bottom: 100px;
-}
-
-#myCarousel {
-margin-left: 50px;
-margin-right: 50px;
-}
-
-.carousel-control-prev {
-margin-left: -125px;
-}
-
-.carousel-control-next {
-margin-right: -125px;
-}
 
 #email {
 font-family:monospace;
@@ -163,6 +141,10 @@ margin-left: 50px;
 height: 100px;
 }
 
+#name {
+  margin-left: 30px;
+}
+
 .form-group {
 margin-top: 50px;
 width: 100%;
@@ -173,9 +155,6 @@ justify-content: right;
 display: flex;
 }
 
-#emailContact {
-
-}
 
 input, textarea {
 width: 300px;
