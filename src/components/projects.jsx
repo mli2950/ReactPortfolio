@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import Navbar from "./reusable/navbar";
 import Footer from "./reusable/footer";
+import RandomQuote from "../assets/images/random-tech-quote-generator.png"
+import EmployeeTracker from "../assets/images/EmployeeTracker.png"
+import ReadMeGen from "../assets/images/readmegenerator.png"
+import Weather from "../assets/images/weather-dashboard.png"
+import WorkDay from "../assets/images/work-day-scheduler.png"
+import ProjectManager from "../assets/images/floating-wildwood-05165.herokuapp.com_all.png"
+
 
 class Projects extends Component {
     state = {};
@@ -28,7 +35,7 @@ class Projects extends Component {
         <div className="bg bg3" />
             <div className="card-columns">
         <div className="card">
-          <img className="card-img-top" src="./Assets/images/random-tech-quote-generator.png" alt="Random Tech Quote Generator" />
+          <img className="card-img-top" src={RandomQuote} alt="Random Tech Quote Generator" />
           <div className="card-body">
             <h5 className="card-title">Random Tech Quote &amp; Image Calendar</h5>
             <p className="card-text">This is my first team project, a calendar that displays
@@ -39,7 +46,7 @@ class Projects extends Component {
           </div>
         </div>
         <div className="card">
-          <img className="card-img-top" src="./Assets/images/weather-dashboard.png" alt="Weather Dashboard" />
+          <img className="card-img-top" src={Weather} alt="Weather Dashboard" />
           <div className="card-body">
             <h5 className="card-title">Weather Dashboard</h5>
             <p className="card-text"> A website I created that displays current and 5 day
@@ -50,7 +57,7 @@ class Projects extends Component {
           </div>
         </div>
         <div className="card">
-          <img className="card-img-top" src="./Assets/images/readmegenerator.png" alt="Readme Generator" />
+          <img className="card-img-top" src={ReadMeGen} alt="Readme Generator" />
           <div className="card-body">
             <h5 className="card-title">readme.md Generator</h5>
             <p className="card-text">A README generator created using Node.js, and inquirer.js</p>
@@ -59,7 +66,7 @@ class Projects extends Component {
           </div>
         </div>
         <div className="card">
-          <img className="card-img-top" src="./Assets/images/floating-wildwood-05165.herokuapp.com_all.png" alt="Project Management Img" />
+          <img className="card-img-top" src={ProjectManager} alt="Project Management Img" />
           <div className="card-body">
             <h5 className="card-title">Project Management Web Application</h5>
             <p className="card-text">Our application offers a project-management tool that allows users to track any ongoing projects for which they are responsible and create new projects.</p>
@@ -68,7 +75,7 @@ class Projects extends Component {
           </div>
         </div>
         <div className="card">
-          <img className="card-img-top" src="./Assets/images/work-day-scheduler.png" alt="Workday Scheduler" />
+          <img className="card-img-top" src={WorkDay} alt="Workday Scheduler" />
           <div className="card-body">
             <h5 className="card-title">Workday Scheduler</h5>
             <p className="card-text">A website I created that shows times throughout the work
@@ -80,7 +87,7 @@ class Projects extends Component {
           </div>
         </div>
         <div className="card">
-          <img className="card-img-top" src="./Assets/images/EmployeeTracker.png" alt="Card image cap" />
+          <img className="card-img-top" src={EmployeeTracker} alt="Card image cap" />
           <div className="card-body">
             <h5 className="card-title">Command-line Team Profile Generator</h5>
             <p className="card-text">This project is a command-line application that generates an HTML page and displays all of the team members and information that the user inputs.</p>
@@ -89,6 +96,7 @@ class Projects extends Component {
           </div>
         </div>
       </div>
+      <Footer />
       </div>
         )
     }
