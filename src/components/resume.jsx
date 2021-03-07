@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Footer from "./reusable/footer";
 import MyResume from "../assets/Resume.pdf";
+import footerClasses from "./footer.json"
 
 class Resume extends Component {
     render() {
@@ -30,7 +31,7 @@ class Resume extends Component {
             </div>
           </div>
         </main>
-        <Footer />
+        <Footer class={footerClasses[1].class}/>
       </div>
         )
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Footer from "./reusable/footer";
+import footerClasses from "./footer.json"
 
 class Contact extends Component {
   render() {
@@ -67,7 +68,7 @@ class Contact extends Component {
             </form>
           </div>
         </div>
-        <Footer />
+        <Footer class={footerClasses[0].class}/>
       </div>
     );
   }

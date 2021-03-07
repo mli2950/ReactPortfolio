@@ -7,6 +7,7 @@ import ReadMeGen from "../assets/images/readmegenerator.png"
 import Weather from "../assets/images/weather-dashboard.png"
 import WorkDay from "../assets/images/work-day-scheduler.png"
 import ProjectManager from "../assets/images/floating-wildwood-05165.herokuapp.com_all.png"
+import footerClasses from "./footer.json"
 
 
 class Projects extends Component {
@@ -96,7 +97,7 @@ class Projects extends Component {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer class={footerClasses[1].class}/>
       </div>
         )
     }

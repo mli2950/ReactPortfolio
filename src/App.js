@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/reusable/navbar";
 import Footer from "./components/reusable/footer";
 import AsherAndI from "./assets/images/rsz_1asherandicircle.png";
@@ -11,17 +11,16 @@ import "./App.css"
 
 function App() {
   return (
-    <div classname="App">
-      <HashRouter basename="/projects">
-    
-      <Switch>
-        <Route exact path='/projects' component={Projects} />
+    <Router>
+      <div>
+         
         <Route exact path='/' component={About} />
-        <Route exact path='/contact' component={Contact} />
-        <Route exact path='/resume' component={Resume} />
-      </Switch>
-    </HashRouter>
+        <Route path='/projects' component={Projects} />
+        <Route path='/contact' component={Contact} />
+        <Route path='/resume' component={Resume} />
+
     </div>
+    </Router>
   );
 }
 

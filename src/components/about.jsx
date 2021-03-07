@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./reusable/navbar";
 import Footer from "./reusable/footer";
 import AsherAndI from "../assets/images/rsz_1asherandicircle.png"
+import footerClasses from "./footer.json"
 
 class About extends Component {
     state = {};
@@ -35,7 +36,8 @@ class About extends Component {
           </div>
             </div>
             <div>
-                <Footer />
+                <Footer 
+                class={footerClasses[0].class}/>
             </div>
 
       </div>
