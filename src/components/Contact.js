@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Footer from "./reusable/footer";
+import {Link} from "react-router-dom";
+import Footer from "./reusable/Footer";
 import footerClasses from "./footer.json"
 
 class Contact extends Component {
@@ -13,6 +14,7 @@ class Contact extends Component {
             type="button"
             data-toggle="collapse"
             data-target="navbarNavAltMarkup"
+            data-target="navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -21,18 +23,26 @@ class Contact extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-item nav-link" href="/">
-                Home <span className="sr-only">(current)</span>
-              </a>
-              <a className="nav-item nav-link " href="./projects">
-                Projects
-              </a>
-              <a className="nav-item nav-link active" href="./contact">
-                Contact
-              </a>
-              <a className="nav-item nav-link" href="./resume">
-                Resume
-              </a>
+              <p>
+                <Link to="/" className="nav-item nav-link">
+                  Home
+                </Link>
+              </p>
+              <p>
+                <Link to="/projects" className="nav-item nav-link">
+                  Projects
+                </Link>
+              </p>
+              <p>
+                <Link to="/contact" className="nav-item nav-link active">
+                  Contact
+                </Link>
+              </p>
+              <p>
+                <Link to="/resume" className="nav-item nav-link">
+                  Resume
+                </Link>
+              </p>
             </div>
           </div>
         </nav>
@@ -68,7 +78,7 @@ class Contact extends Component {
             </form>
           </div>
         </div>
-        <Footer class={footerClasses[0].class}/>
+        <Footer class={footerClasses[0].class} />
       </div>
     );
   }

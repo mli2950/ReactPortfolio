@@ -11,7 +11,7 @@ function Footer(props) {
         </div>
         <div class="col-sm-4" style={{ textAlign: "center" }}>
           <a href="https://github.com/mli2950" target="_blank">
-            <img class="footer-icon" src={Github} alt="Github" />
+            <img class="footer-icon" src={Github} alt="Github"/>
           </a>
 
           <a
